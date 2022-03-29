@@ -1,8 +1,13 @@
 package com.my.springboot.petproject.entity;
 
+import com.my.springboot.petproject.validation.FieldMatch;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@FieldMatch.List({
+        @FieldMatch(first = "password", second = "matchingPassword", message = "The password fields must match")
+})
 public class RegistrationUser {
     @NotNull(message = "is required")
     @Size(min = 1, message = "is required")

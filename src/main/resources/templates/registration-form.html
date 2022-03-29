@@ -72,7 +72,7 @@
                     <div th:if="${#fields.hasErrors('password')}"
                          style="margin-bottom: 25px" class="text-danger">
                         <ul>
-                            <li th:each="err : ${#fields.errors('password')}" th:text="'Password ' + ${err}"/>
+                            <li th:each="err : ${#fields.errors('password')}" th:text="${err}"/>
                         </ul>
                     </div>
 
