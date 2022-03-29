@@ -1,5 +1,6 @@
 package com.my.springboot.petproject.entity;
 
+import com.my.springboot.petproject.validation.EmailValid;
 import com.my.springboot.petproject.validation.FieldMatch;
 
 import javax.validation.constraints.NotNull;
@@ -29,6 +30,7 @@ public class RegistrationUser {
     @Size(min = 1, message = "is required")
     private String lastName;
 
+    @EmailValid
     @NotNull(message = "is required")
     @Size(min = 1, message = "is required")
     private String email;
