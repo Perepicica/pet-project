@@ -1,4 +1,4 @@
-package com.my.springboot.petproject.rest;
+package com.my.springboot.petproject.controller;
 
 import com.my.springboot.petproject.entity.Employee;
 import com.my.springboot.petproject.service.EmployeeServiceImpl;
