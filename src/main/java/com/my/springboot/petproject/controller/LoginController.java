@@ -8,7 +8,11 @@ public class LoginController {
 
     @GetMapping("/login")
     public String showMyLoginPage() {
-        System.out.println("Entered Login");
         return "login-page";
+    }
+
+    @GetMapping("/home")
+    public String showHomePage() {
+        return "home";
     }
 }
